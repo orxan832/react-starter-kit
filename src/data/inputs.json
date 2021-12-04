@@ -1,0 +1,54 @@
+{
+    "register": [
+        {
+            "type": "text",
+            "title": "Name",
+            "placeholder": "Type name here...",
+            "name": "name"
+        },
+        {
+            "type": "text",
+            "title": "Surname",
+            "placeholder": "Type surname here...",
+            "name": "surname"
+        },
+        {
+            "type": "email",
+            "title": "Email",
+            "placeholder": "Type email here...",
+            "name": "email"
+        },
+        {
+            "type": "password",
+            "title": "Password",
+            "placeholder": "Type password here...",
+            "name": "password"
+        },
+        {
+            "type": "password",
+            "title": "Password Retry",
+            "placeholder": "Type password retry here...",
+            "name": "passwordRetry"
+        },
+        {
+            "type": "checkbox",
+            "title": "Check",
+            "placeholder": "Type password retry here...",
+            "name": "check"
+        }
+    ],
+    "login": [
+        {
+            "type": "email",
+            "title": "Email",
+            "placeholder": "Type email here...",
+            "name": "email"
+        },
+        {
+            "type": "password",
+            "title": "Password",
+            "placeholder": "Type password here...",
+            "name": "password"
+        }
+    ]
+}

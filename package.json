@@ -7,6 +7,10 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.24.0",
+    "child_process": "^1.0.2",
+    "env-cmd": "^10.1.0",
+    "jsonwebtoken": "^8.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
@@ -23,7 +27,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "npx tailwindcss -i src/assets/scss/tailwind.scss -o src/assets/scss/style.scss --watch"
+    "watch": "npx tailwindcss -i src/assets/scss/tailwind.scss -o src/assets/scss/style.scss --watch",
+    "build-test": "env-cmd -f .env.test npm run build && xcopy build\\*.* starter-build\\test\\ /s/h/e/k/f/c/y",
+    "build-production": "env-cmd -f .env.production npm run build && xcopy build\\*.* starter-build\\production\\ /s/h/e/k/f/c/y"
   },
   "eslintConfig": {
     "extends": [
