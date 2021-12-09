@@ -9,6 +9,8 @@ import { decoder } from './helper/token';
 import { auth } from './redux/reducers/user';
 import { useDispatch, useSelector } from 'react-redux';
 import { userDataSelector } from './redux/reselects/user';
+import Modal from 'react-modal';
+Modal.setAppElement('#root');
 
 const App = () => {
 
@@ -27,7 +29,6 @@ const App = () => {
   }, [navigate]);
 
   const checkAuthorization = useCallback(() => {
-
     const token = localStorage.token;
     if (token) {
       const user = decoder(token);

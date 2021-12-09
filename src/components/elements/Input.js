@@ -1,7 +1,6 @@
 import React, { memo } from 'react'
 
 const Input = ({ type, title, placeholder, name, value, changeFormHandler }) => {
-    console.log('ok');
     return (
         <div className='flex flex-col'>
             <label htmlFor={name} className='text-sm font-semibold text-gray-400'>{title}</label>

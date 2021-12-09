@@ -13,13 +13,13 @@
     "jsonwebtoken": "^8.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-modal": "^3.14.4",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "react-select": "^5.2.1",
     "react-toastify": "^8.1.0",
     "react-tooltip": "^4.2.21",
-    "sass": "^1.44.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "npx tailwindcss -i src/assets/scss/tailwind.scss -o src/assets/scss/style.scss --watch",
+    "watch": "npx tailwindcss -i src/assets/css/tailwind.css -o src/assets/css/style.css --watch",
     "build-test": "env-cmd -f .env.test npm run build && xcopy build\\*.* starter-build\\test\\ /s/h/e/k/f/c/y",
     "build-production": "env-cmd -f .env.production npm run build && xcopy build\\*.* starter-build\\production\\ /s/h/e/k/f/c/y"
   },
@@ -48,5 +48,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^3.0.0"
   }
 }
